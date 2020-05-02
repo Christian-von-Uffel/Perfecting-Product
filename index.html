@@ -28,6 +28,9 @@
     color:black;
     padding-right: 18px;
   }
+  a:hover {
+  text-decoration: underline;
+  }
   p {
     padding-left: 120px;
     padding-right: 120px;
@@ -42,16 +45,18 @@
     background-image: url('Images/highlight-marking.png');
     background-repeat: no-repeat;
     background-position: calc(50% - 30px) 254px;
+    max-width: 500px;
+    margin:auto;
   }
 </style>
 <body>
-  <h2>Perfecting Product</h2>
+  <h2><a href="/">Perfecting Product</a></h2>
   <nav id="fade">
     <a href="/about">About</a>
     <!-- <a href="/blog/">Blog</a> -->
     <a href="mailto:contact@perfectingproduct.com">Contact</a>
   </nav>
-  <h1 id="tagline">What would business look like <br>if people loved your product?</h1>
+  <h1 id="tagline">What would business look like if people loved your product?</h1>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
     $(document).ready(function() {
