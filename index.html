@@ -13,37 +13,49 @@
     }
   h1 {
     font-size: 27px;
-    text-align: center;
-    padding-top: 210px;
     line-height: 1.5em;
   }
   h2 {
     font-size: 18px;
     padding-left: 24px;
   }
-  .container {
-    position: absolute;
-    text-align: center;
-    color: black;
-    font-size: 27px;
-    font-weight: 600;
+  nav {
+    float:right;
+    padding-right: 24px;
   }
-  .centered {
-    /* position: absolute; */
-    color: 000;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-}
-   body {
+  a {
+    text-decoration:none;
+    color:black;
+    padding-right: 18px;
+  }
+  p {
+    padding-left: 120px;
+    padding-right: 120px;
+    max-width: 720px;
+    line-height: 1.5em;
+    font-size: 18px;
+  }
+  #tagline {
+    text-align: center;
+    padding-top: 210px;
+    padding-bottom: 72px;
     background-image: url('Images/highlight-marking.png');
     background-repeat: no-repeat;
-    background-position: 50% 95%;
-   }
+    background-position: calc(50% - 30px) 254px;
+  }
 </style>
 <body>
-<h2>Perfecting Product</h2>
-<h1>What would business look like <br>if people loved your product?</h1>
-</div>
-</body>
+  <h2>Perfecting Product</h2>
+  <nav id="fade">
+    <a href="/blog/">About</a>
+    <!-- <a href="/blog/">Blog</a> -->
+    <a href="mailto:contact@perfectingproduct.com">Contact</a>
+  </nav>
+  <h1 id="tagline">What would business look like <br>if people loved your product?</h1>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $('#fade').hide().delay(1200).fadeIn(500);
+});
+    </script>
 </html>
