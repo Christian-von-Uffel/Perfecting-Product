@@ -33,7 +33,7 @@ p {
 #tagline {
   text-align: center;
   padding-top: 210px;
-  padding-bottom: 128px;
+  padding-bottom: 72px;
   background-image: url('Images/highlight-marking.png');
   background-repeat: no-repeat;
   background-position: calc(50% - 30px) 254px;
@@ -42,13 +42,6 @@ p {
 }
 #page-title {
   text-align: center;
-  padding-top: 180px;
-}
-#footer {
-  font-size: 16px;
-  text-align: center;
-  margin: auto;
-  max-width: 250px;
   padding-top: 180px;
 }
 @media screen and (max-width: 414px) {
