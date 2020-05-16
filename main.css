@@ -16,7 +16,6 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  padding-right: 18px;
 }
 a:hover {
   text-decoration: underline;
@@ -93,6 +92,11 @@ input[type=submit] {
   font-size: 21px;
   font-weight: 600;
 }
+
+#nav-links {
+  padding-right: 18px;
+}
+
 @media screen and (max-width: 414px) {
   #tagline {
     text-align: center;
