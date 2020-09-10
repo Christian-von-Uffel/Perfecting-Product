@@ -131,7 +131,7 @@ button {
   display: block;
   box-shadow: 4px;
 }
-.testimonial {
+.testimonial-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 12px;
@@ -156,6 +156,9 @@ button {
 }
 .link-card:hover {
   cursor: pointer;
+  transform: scale(1.02);
+  transition-duration: .150s;
+  transition-timing-function: ease-in-out;
 }
 .link-card-image {
   display: block;
@@ -170,6 +173,7 @@ button {
   line-height: 1.5em;
   grid-column: 2 / 4;
   position: relative;
+  margin: auto;
 }
 .link-card-title {
   font-size: 18px;
@@ -201,6 +205,7 @@ button {
   line-height: 1.6em;
   grid-column: 2 / 4;
   position: relative;
+  margin: auto;
 }
 .testimonial-source {
   padding-left: 60px;
@@ -251,7 +256,7 @@ button {
   padding-right: 18px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
   #tagline {
     text-align: center;
     padding-top: 120px;
@@ -267,4 +272,14 @@ button {
   #page-title {
     text-align: center;
     padding-top: 60px;
+  }
+  .testimonial-card {
+    display: block;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .link-card {
+    display: block;
+    /* display: flex;
+    flex-direction: column; */
   }
