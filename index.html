@@ -18,76 +18,85 @@
   <meta property="og:image" content="Images/Opengraph-Image-Card.png" />
   <meta property="og:description" content="Deep customer research and product strategy for product-led growth" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"> 
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="tailwind-supp-styles.css">
+  <link rel="icon" href="Images/Favicon_32.png"/>
   <title>Perfecting Product | Customer Research and Product Strategy for SaaS Companies</title>
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<link href="main.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="Images/Favicon_32.png"/>
 <body>
-  <div class="logo"><a href="/">Perfecting Product</a></div>
-  <nav id="fade">
-    <a id="nav-links" href="/about">About</a>
-    <a id="nav-links" href="https://blog.perfectingproduct.com">Blog</a>
-    <a id="nav-links" href="https://perfectingproduct.typeform.com/to/ccCS2h">Work With Us</a>
-  </nav>
+  
+  <div class="relative leading-snug container flex justify-between mx-auto px-8 py-6 text-base">
+    <div class="text-lg font-medium">
+      <a href="/">
+        Perfecting Product
+      </a>
+    </div>
+    
+    <nav class="flex flex items-center">
+      <a class="mr-8" href="/about">About</a>
+      <a class="mr-8" href="https://blog.perfectingproduct.com/">Blog</a>
+      <button class="bg-black text-gray-200 py-2 px-4 mr-8 rounded hover:bg-gray-800 hover:shadow-lg transition duration-300">
+        <a href="https://perfectingproduct.typeform.com/to/ccCS2h">
+          Work With Us
+        </a>
+      </button>
+    </nav>
+  </div>
+  
 
-  <div class="salespage-content">
-    <div class="left-512">
-      <div class="sales-heading">Fed up with having little to no product-led growth?</div>
-
-      With deep customer research, user interviews and testing, we identify the roadblocks standing in your way.
+  <div class="max-w-screen-md m-4 mx-auto">
+    <div class="mt-40 mb-48 m-12 pr-12 max-w-lg">
+      <div class="font-medium text-3xl mb-12">Fed up with having little to no product-led growth?</div>
+      <div class="text-xl">With deep customer research, user interviews and testing, we identify the roadblocks standing in your way.</div>
     </div>
 
-  <div class="page-section-title sales-heading margin-top-60">
-    Testimonials
+
+    <div class="text-center text-2xl md:text-3xl font-semibold m-10 mt-32">Testimonials</div>
+
+    <div class="p-6 m-4 shadow-lg border-solid border-gray-300 border rounded-md text-base sm:flex">
+      <div class="text-center font-medium px-12">
+        <img class="rounded-full w-32 mb-2 mx-auto" src="Images/Alex-Krupp.jpeg" alt="">
+        <div>Alex Krupp</div>
+        <div>Founder, FWD:Everyone</div>
+      </div>
+      <div class="text-base m-6">Christian helped us with user testing; he immediately identified a bunch of problems with our product and onboarding flow, and came up with pragmatic and easy-to-implement ways to improve our funnel.
+      </div>
+    </div>
+    
+
+    <div class="text-center text-2xl md:text-3xl font-semibold m-10 mt-32">Press</div>
+
+    <div class="m-8 text-lg">
+      We've been interviewed and featured on UserInterviews.com:
+    </div>
+
+    <div class="shadow-lg border-solid border-gray-300 border rounded-md m-4 mb-32 cursor-pointer overflow-hidden sm:flex hover:shadow-xl transition duration-300 hover:border-gray-400" onclick=" location.href='https://www.userinterviews.com/blog/prototype-testing-process';">
+      <img class="" src="/Users/christian/Documents/GitHub/Perfecting-Product/Images/User-Interviews-Article-Preview-Image-Prototype-Testing-Process.png" alt="How to Use Prototype Testing to Create Emotionally Satisfying User Experiences">
+      <div class="p-6">
+        <div class="text-base font-semibold mb-1">How to Use Prototype Testing to Create Emotionally Satisfying User Experiences</div>
+        <div class="text-base">Customer research and user testing is harder than it seems. Learn some of the most important things to watch out for.</div>
+      </div>
+    </div>
+    
+    <div class="mb-24 mt-24 flex justify-center items-center">
+      <button class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 hover:shadow-lg transition duration-300">
+        <a href="https://perfectingproduct.typeform.com/to/ccCS2h">
+          Work With Us
+        </a>
+      </button>
+    </div>
+
+    <div class="mb-24 mt-24">
+      <div class="text-xs text-center mb-2 mx-auto w-56">
+        <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/">This website's code is written by hand and open source</a>
+      </div>
+      <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/"> 
+        <img class="w-8 mx-auto" src="Images/GitHub-Mark-64px.png" alt="">
+    </div>
+    
+
   </div>
 
-  <div class="testimonial-card">
-    <div class="testimonial-bio">
-      <img class="testimonial-image" src="Images/Alex-Krupp.jpeg" alt="Alex Krupp">
-      <div>Alex Krupp</div>
-      <div>Founder, FWD: Everyone</div>
-    </div>
-    <div class="testimonial-copy">
-    Christian helped us with user testing; he immediately identified a bunch of problems with our product and onboarding flow, and came up with pragmatic and easy-to-implement ways to improve our funnel.
-    </div>
-  </div>
-
-  <div class="page-section-title">
-    <div class="sales-heading">
-      Press
-    </div>
-  </div>
-    <br>
-    <div class="center">We've been interviewed and featured on UserInterviews.com:</div>
-
-  <div class="link-card" onclick="location.href='https://www.userinterviews.com/blog/prototype-testing-process';">
-    <div class="bio">
-      <img class="link-card-image" src="Images/User-Interviews-Article-Preview-Image-Prototype-Testing-Process.png" alt="How to Use Prototype Testing to Create Emotionally Satisfying User Experiences">
-    </div>
-    <div class="link-card-copy">
-      <div class="link-card-title">How to Use Prototype Testing to Create Emotionally Satisfying User Experiences</div>
-      Customer research and user testing easily goes wrong. Learn some of the most important things to watch out for.
-    </div>
-  </div>
-
-<div class="center-items margin-top-60">
-  <a href="https://perfectingproduct.typeform.com/to/ccCS2h"><button type="button" name="button">Get Started</button></a>
-</div>
-
-  <div id="double-fade">
-    <p id="footer">
-      <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/">This website's code is written by hand and open source</a>
-      <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/"> <img class="footer-image" src="Images/GitHub-Mark-64px.png" alt="">
-    </p>
-  </div>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script>
-    $(document).ready(function() {
-      $('#fade').hide().delay(1200).fadeIn(500);
-});
-    $(document).ready(function() {
-      $('#double-fade').hide().delay(2400).fadeIn(500);
-});
-    </script>
+</body>
 </html>
