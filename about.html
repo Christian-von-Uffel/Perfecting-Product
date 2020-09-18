@@ -10,24 +10,42 @@
 
         gtag('config', 'UA-107791629-3');
       </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Perfecting Product combines deep customer research and product strategy to solve software product problems and create product-led growth">
-  <title>About Perfecting Product</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Perfecting Product combines deep customer research and product strategy to solve software product problems and create product-led growth">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tailwind-supp-styles.css">
+    <link rel="icon" href="Images/Favicon_32.png">
+    <title>About Perfecting Product</title>
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<link href="main.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="Images/Favicon_32.png">
 <body>
-<div class="logo"><a href="/">Perfecting Product</a></div>
-<nav id="fade">
-  <a id="nav-links" href="/about">About</a>
-  <a id="nav-links" href="https://blog.perfectingproduct.com">Blog</a>
-  <a id="nav-links" href="https://perfectingproduct.typeform.com/to/ccCS2h">Contact</a>
-</nav>
-<h1 id="page-title">About</h1>
-<p>
+
+    <!-- top nav -->
+  <div class="relative leading-snug container flex-wrap md:flex justify-between mx-auto px-8 py-6 text-base items-center">
+    <div class="text-lg font-medium">
+      <a href="/">
+        Perfecting Product
+      </a>
+    </div>
+    
+    <nav class="flex mt-6 md:mt-0 flex items-center">
+      <a class="mr-8" href="/about">About</a>
+      <a class="mr-8" href="https://blog.perfectingproduct.com/">Blog</a>
+      <button class="bg-black text-gray-200 py-2 px-4 mr-8 rounded hover:bg-gray-800 hover:shadow-lg transition duration-300">
+        <a href="https://perfectingproduct.typeform.com/to/ccCS2h">
+          Work With Us
+        </a>
+      </button>
+    </nav>
+  </div>
+
+    <!-- section header -->
+    <div class="text-center text-2xl md:text-3xl font-semibold m-8 md:mt-32">About</div>
+
+
+<p class="max-w-screen-md mx-auto px-4 text-lg whitespace-pre-line tracking-loose">
 We know how hard it can be to create software that people will both love and pay for.
 
 After years of working with founders to identify the biggest roadblocks getting in the way of creating sustainable product-led growth, we decided to create a name for what we were doing and the services we were offering.
@@ -47,20 +65,28 @@ The result is stronger product engagement, reduced churn, improved customer refe
 
 The first principle of our company philosophy:
 
-<b>"If you would like to improve something, first ask how you should measure it"</b>
+<span class="font-bold text-gray-900 italic">"If you would like to improve something, first ask how you should measure it"</span>
 
 The first challenge we help software businesses overcome is measurement. We help businesses measure success and failure, so they can prioritize development and do what work is worth doing.</p>
 
-<div class="center-items margin-top-60">
-  <a href="https://perfectingproduct.typeform.com/to/ccCS2h"><button type="button" name="button">Get Started</button></a>
-</div>
+    <!-- CTA button -->
+    <div class="mb-24 mt-24 flex justify-center items-center">
+        <button class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 hover:shadow-lg transition duration-300">
+          <a href="https://perfectingproduct.typeform.com/to/ccCS2h">
+            Work With Us
+          </a>
+        </button>
+      </div>
 
-<div id="double-fade">
-  <p id="footer">
-    <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/">This website's code is written by hand and open source</a>
-    <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/"> <img class="footer-image" src="Images/GitHub-Mark-64px.png" alt="">
-  </p>
-</div>
+<!-- footer -->
+<div class="mb-24 mt-24">
+    <div class="text-xs text-center mb-2 mx-auto w-56">
+      <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/">This website's code is written by hand and open source</a>
+    </div>
+    <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/"> 
+      <img class="w-8 mx-auto" src="Images/GitHub-Mark-64px.png" alt="">
+  </div>
+  
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
     $(document).ready(function() {
