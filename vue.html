@@ -50,7 +50,7 @@
     <!-- process card -->
     <div v-for="process in process" class="shadow-lg border-solid border-gray-300 border rounded-md m-4 mb-12 overflow-hidden sm:flex">
         <div class="p-4 md:p-8 sm:w-3/5">
-          <div class="text-lg tracking-wide font-semibold mb-2">{{process.type}}</div>
+          <div class="text-lg tracking-wide font-semibold mb-2">{{process.stage}}</div>
           <div class="text-base text-gray-700">{{process.description}}</div>
         </div>
         <div class="sm:w-2/5" :class="process.patternColor" :id="process.pattern"></div>
@@ -138,19 +138,19 @@
         data:{
             process: [
                 {
-                    title: "Customer Research",
+                    stage: "Customer Research",
                     description: "We interview your customers and the people on your team who interact with them most to uncover their painpoints, motivations, and how they intersect with your business and product.",
                     pattern: "topography",
                     patternColor: "bg-teal-600",
                 },
                 {
-                    title: "User Testing",
+                    stage: "User Testing",
                     description: "We create annotated UI and UX breakdowns of your key product experiences and those of your competitors, qualify user testing participants, test your product and prototypes, and analyze the results.",
                     pattern: "tictactoe",
                     patternColor: "bg-orange-600",
                 },
                 {
-                    title: "Product Strategy",
+                    stage: "Product Strategy",
                     description: "We use the results of our customer research and user testing to create actionable product strategy that includes refined and updated user flows, product specifications, and product designs.",
                     pattern: "temple",
                     patternColor: "bg-blue-600",
