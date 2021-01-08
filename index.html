@@ -49,11 +49,11 @@
     </nav>
   </header>
   
-  <!-- main hero section -->
+  <!-- hero section -->
   <div class="max-w-screen-md m-4 mx-auto">
-    <div class="mt-20 mb-20 md:mt-40 md:mb-48 m-6 md:m-12 md:pr-12 max-w-lg">
-      <div class="font-medium text-3xl mb-12">Fed up with having little to no product-led growth?</div>
-      <div class="text-xl">With deep customer research, user interviews and testing, we identify the roadblocks standing in your way.</div>
+    <div class="my-20 md:mt-40 md:mb-48 m-6 md:m-12 md:pr-12">
+      <div class="font-medium text-2xl md:text-3xl lg:text-4xl mb-8">{{heroSection.problemStatement}}</div>
+      <div class="text-xl text-gray-800">{{heroSection.solutionStatement}}</div>
     </div>
 
     <!-- section header -->
@@ -170,6 +170,10 @@
                 url: "https://www.perfectingproduct.com/about"
               },
             ],
+            heroSection:{
+              problemStatement: "Fed up with having little to no product-led growth?",
+              solutionStatement: "Identify the roadblocks standing in your way with deep customer research, user interviews and testing."
+            },
             process: [
                 {
                     stage: "Customer Research",
