@@ -74,7 +74,7 @@
     <div class="text-center text-2xl md:text-3xl font-semibold m-10 mt-32">Who you'll be working with:</div>
 
     <!-- image card -->
-    <div class="p-6 m-4 shadow-lg border-solid border-gray-300 border rounded-md text-base sm:flex">
+    <div class="p-6 m-4 shadow-lg border border-gray-300 rounded-md text-base sm:flex">
         <div class="text-center font-medium px-12">
           <img class="rounded-full w-32 mb-2 mx-auto" src="Images/Christian-von-Uffel-Square-Two-Sigma-Headshot.png" alt="Christian von Uffel">
           <div class="text-lg">Christian von Uffel</div>
@@ -100,7 +100,7 @@
         <div>{{testimonial.name}}</div>
         <div>{{testimonial.title}}, {{testimonial.company}}</div>
       </div>
-      <div class="text-base mt-2 md:mt-8 md:m-6">Christian has a rare ability to quickly identify problems in customer experience and product. He immediately identified problems in our product’s onboarding process that we needed to solve, the next steps to fix them, and exactly how to measure the result of these changes.
+      <div class="mt-2 md:mt-8 md:m-6">{{testimonial.content}}
       </div>
     </div>
     
@@ -108,8 +108,8 @@
     <div class="text-center text-2xl md:text-3xl font-semibold m-10 mt-32">Press</div>
 
     <!-- section subheader -->
-    <div class="m-8 text-lg">
-      We've been interviewed and featured on UserInterviews.com:
+    <div class="text-center m-4 text-lg">
+      UserInterviews.com interviewed and featured us:
     </div>
 
     <!-- link card -->
@@ -145,7 +145,6 @@
 </div>
 
 </body>
-</html>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     const app = new Vue({
@@ -224,3 +223,4 @@
         }
     })
 </script>
+</html>
