@@ -66,7 +66,7 @@
           <div class="text-base text-gray-700">{{process.description}}</div>
         </div>
         <div class="sm:w-2/5" :class="process.backgroundColor">
-          <img :src="process.image" :alt="process.stage" class="mx-auto h-64 object-contain p-8">
+          <img :src="process.image" :alt="process.stage" class="mx-auto h-64 object-contain p-8 pointer-events-none">
         </div>
       </div>
 
@@ -76,7 +76,7 @@
     <!-- image card -->
     <div class="p-6 m-4 shadow-lg border border-gray-300 rounded-md text-base sm:flex">
         <div class="text-center font-medium px-12">
-          <img class="rounded-full w-32 mb-2 mx-auto" src="Images/Christian-von-Uffel-Square-Two-Sigma-Headshot.png" alt="Christian von Uffel">
+          <img class="rounded-full w-32 mb-2 mx-auto pointer-events-none" src="Images/Christian-von-Uffel-Square-Two-Sigma-Headshot.png" alt="Christian von Uffel">
           <div class="text-lg">Christian von Uffel</div>
           <div class="text-gray-800">Product Leader, Perfecting Product</div>
         </div>
@@ -94,7 +94,7 @@
     <!-- testimonial card -->
     <div v-for="testimonial in testimonials" class="p-6 m-4 mb-8 shadow-lg border border-gray-300 rounded-md text-base sm:flex">
       <div class="text-center font-medium px-12">
-        <div class="rounded-full w-32 h-32 overflow-hidden mx-auto mb-2">
+        <div class="rounded-full w-32 h-32 overflow-hidden mx-auto mb-2 pointer-events-none">
             <img :src="testimonial.imageSource" alt="testimonial.name">
         </div>
         <div>{{testimonial.name}}</div>
@@ -118,7 +118,7 @@
         <div class="text-xl font-semibold mb-4">{{press.title}}</div>
         <div class="text-base text-gray-700">{{press.description}}</div>
       </div>
-      <img class="col-span-1 sm:col-span-2 h-64 sm:h-full object-cover" :src="press.imageSource" :alt="press.title">
+      <img class="col-span-1 sm:col-span-2 h-64 sm:h-full object-cover pointer-events-none" :src="press.imageSource" :alt="press.title">
     </a>
     
     <!-- CTA button -->
@@ -136,7 +136,7 @@
         <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/">This website's code is written by hand and open source</a>
       </div>
       <a href="https://github.com/Christian-von-Uffel/Perfecting-Product/"> 
-        <img class="w-8 mx-auto" src="Images/GitHub-Mark-64px.png" alt="">
+        <img class="w-8 mx-auto pointer-events-none" src="Images/GitHub-Mark-64px.png" alt="">
     </div>
     
   </div>
