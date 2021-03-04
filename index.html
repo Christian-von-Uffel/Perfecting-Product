@@ -127,13 +127,16 @@
       <img class="col-span-1 sm:col-span-2 h-64 object-cover pointer-events-none" :src="press.imageSource" :alt="press.title">
     </a>
     
-    <!-- CTA button -->
-    <div class="mb-24 mt-24 flex justify-center items-center">
-      <button class="bg-black text-gray-200 hover:text-white py-2 px-4 rounded hover:bg-gray-800 hover:shadow-lg transition duration-150">
-        <a href="https://perfectingproduct.typeform.com/to/ccCS2h">
-          Work With Us
-        </a>
-      </button>
+    <!-- get started section -->
+    <div class="mt-32 mb-48 md:grid gap-4 md:grid-cols-5 justify-center mx-4">
+      <div class="md:col-span-3 text-2xl md:text-4xl font-medium px-4 md:px-16 py-12 md:py-24">
+        Get started finding product-market fit and creating product-led growth
+      </div>
+      <form name="contact" action="POST" data-netlify="true" class="col-span-2 flex flex-col gap-6 bg-gradient-to-br from-gray-100 to-gray-50 rounded-xl border shadow-xl hover:shadow-2xl transition duration-300 py-12 md:py-24 px-12 text-lg">
+        <label>Your First Name: <input type="text" name="name" required="true" class="rounded border shadow focus:outline-none px-6 py-4"/></label>
+        <label>Your Business Email: <input type="email" name="email" required="true" class="rounded border shadow focus:outline-none px-6 py-4"/></label>
+        <button type="submit" class="bg-black text-gray-200 hover:text-white py-4 px-6 rounded-md hover:bg-gray-800 hover:shadow-lg transition duration-150">Submit</button>
+      </form>
     </div>
 
     <!-- email capture form -->
