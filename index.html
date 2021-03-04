@@ -84,6 +84,16 @@
       </div>
 
     <!-- section header -->
+    <div class="text-center text-2xl md:text-3xl font-semibold m-12 mt-36">Trusted by</div>
+
+    <!-- trusted by section -->
+    <div class="flex justify-center items-center gap-16 pointer-events-none mb-48">
+      <div v-for="logo in logos" style="filter: grayscale(100%);">
+        <img :src="logo.image" :alt="title" class="h-12 w-auto">
+      </div>
+    </div>
+
+    <!-- section header -->
     <div class="text-center text-2xl md:text-3xl font-semibold m-12 mt-36">Testimonials</div>
 
     <!-- testimonial card -->
