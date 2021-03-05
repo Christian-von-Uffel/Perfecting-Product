@@ -92,6 +92,14 @@
         <img :src="logo.image" :alt="title" class="h-12 w-auto">
       </div>
     </div>
+    <!-- link card -->
+    <a v-for="press in press" :href="press.url" class="rounded-md shadow-lg border border-gray-200 mb-32 cursor-pointer overflow-hidden grid sm:grid-cols-5 items-center hover:shadow-xl transition duration-150 hover:border-gray-300 mx-4">
+      <div class="col-span-1 sm:col-span-3 p-4 sm:p-6 md:p-8 lg:px-12">
+        <div class="text-xl tracking-wide font-semibold mb-3">{{press.title}}</div>
+        <div class="text-lg text-gray-700">{{press.description}}</div>
+      </div>
+      <img class="col-span-1 sm:col-span-2 object-cover w-full h-64 sm:h-full pointer-events-none" :src="press.imageSource" :alt="press.title">
+    </a>
 
     <!-- section header -->
     <div class="text-center text-2xl md:text-3xl font-semibold m-12 mt-36">Testimonials</div>
@@ -118,14 +126,6 @@
       UserInterviews.com interviewed and featured us:
     </div>
 
-    <!-- link card -->
-    <a v-for="press in press" :href="press.url" class="rounded-md shadow-lg border border-gray-300 m-4 mb-32 cursor-pointer overflow-hidden grid grid-cols-1 sm:grid-cols-5 items-center hover:shadow-xl transition duration-150 hover:border-gray-400">
-      <div class="col-span-1 sm:col-span-3 p-4 sm:p-8 md:px-6">
-        <div class="text-xl font-semibold mb-4">{{press.title}}</div>
-        <div class="text-base text-gray-700">{{press.description}}</div>
-      </div>
-      <img class="col-span-1 sm:col-span-2 h-64 object-cover pointer-events-none" :src="press.imageSource" :alt="press.title">
-    </a>
     
     <!-- get started section -->
     <div class="mt-32 mb-48 md:grid gap-4 md:grid-cols-4 lg:grid-cols-5 justify-center mx-4">
