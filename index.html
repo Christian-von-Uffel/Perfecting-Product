@@ -102,7 +102,7 @@
     </div>
 
     <!-- link card -->
-    <a v-for="press in press" :href="press.url" class="rounded-md shadow-lg border border-gray-200 mb-32 cursor-pointer overflow-hidden grid sm:grid-cols-5 items-center hover:shadow-xl transition duration-150 hover:border-gray-300 mx-4">
+    <a v-for="press in press" :href="press.url" target="_blank" class="rounded-md shadow-lg border border-gray-200 mb-32 cursor-pointer overflow-hidden grid sm:grid-cols-5 items-center hover:shadow-xl transition duration-150 hover:border-gray-300 mx-4">
       <div class="col-span-1 sm:col-span-3 p-4 sm:p-6 md:p-8 lg:px-12">
         <div class="text-xl tracking-wide font-semibold mb-3">{{press.title}}</div>
         <div class="text-lg text-gray-700">{{press.description}}</div>
